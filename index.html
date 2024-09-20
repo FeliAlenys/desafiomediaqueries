@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta arset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumbre Real - Bienes Raíces</title>
+    <link rel="stylesheet" href="./assets/css/styles02.css">
+</head>
+<body>
+    <div class="layout"> 
+        <!--Navbar-->
+        <header class="navbar">
+            <div class="navbar-logo">Cumbre Real</div>
+            <nav class="navbar-menu">  
+                <div class="menu-item">Inicio</div>
+                <div class="menu-item">Catálogo</div>
+                <div class="menu-item">Ofertas</div>
+                <div class="menu-item">Contacto</div>
+            </nav>
+            <div class="menu-icon">&#9776;</div> <!--Icono de menú hamburguesa para dispositivos mobiles-->
+        </header>
+    
+        <!--Filtros ded búsqueda-->
+        <section class="filters">
+            <label for="ordenar">Ordenar por:</label>
+            <select id="ordenar">
+                <option>Más relevantes</option>
+                <option>Más recientes</option>
+                <option>Menor precio</option>
+                <option>Mayor precio</option>
+            </select>
+        </section>
+    
+        <!--Grilla de productos-->
+        <main class="productos">
+            <div class="grid">
+                <!--Tarjetas de productos-->
+                <article class="producto-card">
+                    <img src="./assets/img/casaventa1.jpg" alt="Casa en venta 1">
+                    <h3>Casa en Venta en Pudahuel</h3>
+                    <p>2.800 UF</p>
+                    <button>Ver más</button>
+                </article>
+                <article class="producto-card">
+                    <img src="./assets/img/casaventa2.jpg" alt="Casa en venta 2">
+                    <h3>Casa en Venta en Peñalolén</h3>
+                    <p>3.000 UF</p>
+                    <button>Ver más</button>
+                </article>
+                <article class="producto-card">
+                    <img src="./assets/img/departamentoventa1.jpg" alt="Departamento en venta 1">
+                    <h3>Departamento en Venta en Ñuñoa</h3>
+                    <p>$2.300 UF</p>
+                    <button>Ver más</button>
+                </article>
+                <article class="producto-card">
+                    <img src="./assets/img/casaarriendo1.jpg" alt="Casa en arriendo 1">
+                    <h3>Casa en Arriendo en Barrio República</h3>
+                    <p>$550,000 Pesos</p>
+                    <button>Ver más</button>
+                </article>
+                <article class="producto-card">
+                    <img src="./assets/img/departamentoarriendo1.jpg" alt="Departamento en arriendo 1">
+                    <h3>Departamento en Arriendo en Santiago</h3>
+                    <p>$450,000 Pesos</p>
+                    <button>Ver más</button>
+                </article>
+                <article class="producto-card">
+                    <img src="./assets/img/departamentoarriendo2.jpg" alt="Departamento en arriendo 2">
+                    <h3>Departamento en Arriendo en Macul</h3>
+                    <p>$420,000 Pesos</p>
+                    <button>Ver más</button>
+                </article>
+                <article class="producto-card">
+                    <img src="./assets/img/departamentoarriendo3.jpg" alt="Departamento en arriendo 3">
+                    <h3>Departamento en Arriendo en Providencia</h3>
+                    <p>$550,000 Pesos</p>
+                    <button>Ver más</button>
+                </article>
+                <article class="producto-card">
+                    <img src="./assets/img/localarriendo1.jpg" alt="Local comercial en arriendo 1">
+                    <h3>Local comercial en Arriendo en Santiago</h3>
+                    <p>$630,000 Pesos</p>
+                    <button>Ver más</button>
+                </article>
+    
+            <!--Añadir más productos-->
+            </div>
+        </main>
+    
+        <!--Footer-->
+        <footer class="footer">
+            <p>© Cumbre Real - Todos los derechos reservados</p>
+            <p>Contacto: +56 9 45873024</p>
+        </footer>
+    </div>
+
+    <!-- Aquí es donde debes incluir el script -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        menuIcon.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
